@@ -17,6 +17,8 @@ import { CountryPlanData } from '../types';
 import { Interactive3DFluidBackground } from '../components/Interactive3DFluidBackground';
 import { GraduationCap } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default function HomePage() {
   const { scrollTo } = useLenis();
   const [mounted, setMounted] = useState(false);

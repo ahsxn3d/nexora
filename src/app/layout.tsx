@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { LenisProvider } from '../context/LenisContext';
+import { NextAuthSessionProvider } from '../context/NextAuthSessionProvider';
 import { AuthProvider } from '../context/AuthContext';
 import { AuthModal } from '../components/AuthModal';
 
@@ -41,13 +42,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#F4EFE6] text-[#1F1914] antialiased selection:bg-[#E5D7B7] selection:text-[#1F1914]">
-        <AuthProvider>
-          <LenisProvider>
-            {children}
-            <AuthModal />
-          </LenisProvider>
-        </AuthProvider>
+      <body className="bg-[#F8F5EE] text-[#1F1914] antialiased selection:bg-[#E5D7B7] selection:text-[#1F1914]">
+        <NextAuthSessionProvider>
+          <AuthProvider>
+            <LenisProvider>
+              {children}
+              <AuthModal />
+            </LenisProvider>
+          </AuthProvider>
+        </NextAuthSessionProvider>
       </body>
     </html>
   );

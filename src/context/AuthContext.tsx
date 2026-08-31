@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useSession, signIn as nextAuthSignIn, signOut as nextAuthSignOut } from 'next-auth/react';
 import { UserProfile } from '../types';
 
 interface AuthContextType {
@@ -13,6 +14,7 @@ interface AuthContextType {
   clearUserApiKey: () => void;
   openAuthModal: () => void;
   closeAuthModal: () => void;
+  signInWithGoogle: () => void;
   signInPersonal: (name?: string, email?: string) => void;
   signOut: () => void;
 }
@@ -20,8 +22,8 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<UserProfile | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: session, status } = useSession();
+  const [localUser, setLocalUser] = useState<UserProfile | null>(null);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [userApiKey, setUserApiKeyState] = useState<string>('');
 
@@ -29,7 +31,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const savedUser = localStorage.getItem('nexora_auth_user');
       if (savedUser) {
-        setUser(JSON.parse(savedUser));
+        setLocalUser(JSON.parse(savedUser));
       }
       const savedKey = localStorage.getItem('nexora_user_gemini_api_key');
       if (savedKey) {
@@ -37,10 +39,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
     } catch (e) {
       console.error('Error loading stored auth session', e);
-    } finally {
-      setIsLoading(false);
     }
   }, []);
+
+  // Sync Google NextAuth session if active
+  const user: UserProfile | null = session?.user
+    ? {
+        id: (session.user as any).id || session.user.email || 'google_user',
+        name: session.user.name || 'Google Scholar',
+        email: session.user.email || 'scholar@gmail.com',
+        image: session.user.image || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
+        isPersonalUser: true,
+      }
+    : localUser;
 
   const setUserApiKey = (key: string) => {
     const trimmed = key.trim();
@@ -68,6 +79,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openAuthModal = () => setIsAuthModalOpen(true);
   const closeAuthModal = () => setIsAuthModalOpen(false);
 
+  const signInWithGoogle = () => {
+    nextAuthSignIn('google', { callbackUrl: window.location.href });
+  };
+
   const signInPersonal = (name = 'Scholar Candidate', email = 'scholar@nexora.app') => {
     const newUser: UserProfile = {
       id: `usr_${Date.now()}`,
@@ -76,7 +91,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
       isPersonalUser: true,
     };
-    setUser(newUser);
+    setLocalUser(newUser);
     try {
       localStorage.setItem('nexora_auth_user', JSON.stringify(newUser));
     } catch (e) {
@@ -86,11 +101,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signOut = () => {
-    setUser(null);
+    setLocalUser(null);
     try {
       localStorage.removeItem('nexora_auth_user');
     } catch (e) {
       console.error('Failed to remove user session', e);
+    }
+    if (session) {
+      nextAuthSignOut({ callbackUrl: '/' });
     }
   };
 
@@ -99,13 +117,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       value={{
         user,
         isAuthenticated: !!user,
-        isLoading,
+        isLoading: status === 'loading',
         isAuthModalOpen,
         userApiKey,
         setUserApiKey,
         clearUserApiKey,
         openAuthModal,
         closeAuthModal,
+        signInWithGoogle,
         signInPersonal,
         signOut,
       }}

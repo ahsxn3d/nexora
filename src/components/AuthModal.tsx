@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext';
 import { NexoraLogo } from './NexoraLogo';
 
 export const AuthModal: React.FC = () => {
-  const { isAuthModalOpen, closeAuthModal, signInPersonal } = useAuth();
+  const { isAuthModalOpen, closeAuthModal, signInPersonal, signInWithGoogle } = useAuth();
   const [candidateName, setCandidateName] = useState('');
   const [candidateEmail, setCandidateEmail] = useState('');
   const [showConfigGuide, setShowConfigGuide] = useState(false);
@@ -20,13 +20,7 @@ export const AuthModal: React.FC = () => {
   };
 
   const handleGoogleOAuth = () => {
-    // Attempt NextAuth sign in or fallback
-    try {
-      // In browser, trigger OAuth or fallback
-      signInPersonal(candidateName || 'Google Scholar', candidateEmail || 'user@gmail.com');
-    } catch {
-      signInPersonal('Google Scholar', 'user@gmail.com');
-    }
+    signInWithGoogle();
   };
 
   return (

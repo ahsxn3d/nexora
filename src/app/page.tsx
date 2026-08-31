@@ -188,8 +188,8 @@ export default function HomePage() {
         onSelectCountry={setSelectedCountry}
       />
 
-      {/* Container constraint */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      {/* Container constraint with generous top margin/padding from browser search bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 md:pt-10 pb-20">
         {/* Navigation & Hero Banner */}
         <Header
           totalTasks={totalChecklistItems}

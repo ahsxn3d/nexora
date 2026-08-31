@@ -1,8 +1,0 @@
-{
-  "/_global-error/page": "app/_global-error/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/ai/adapt-plan/route": "app/api/ai/adapt-plan/route.js",
-  "/api/ai/chat/route": "app/api/ai/chat/route.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/page": "app/page.js"
-}

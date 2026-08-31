@@ -1,8 +1,0 @@
-{
-  "/_global-error/page": "/_global-error",
-  "/_not-found/page": "/_not-found",
-  "/api/ai/adapt-plan/route": "/api/ai/adapt-plan",
-  "/api/ai/chat/route": "/api/ai/chat",
-  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
-  "/page": "/"
-}

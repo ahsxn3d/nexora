@@ -1,0 +1,7 @@
+{
+  "name": "Nexora — 100% Full-Need US Admissions & F-1 Visa Roadmap",
+  "description": "Interactive roadmap and portal dashboard for international students navigating US college admissions, 100% need-met financial aid, and the F-1 visa pathway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

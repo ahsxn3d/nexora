@@ -119,7 +119,7 @@ const AuthModal = ()=>{
                         stiffness: 380,
                         damping: 25
                     },
-                    className: "relative w-full max-w-md bg-[#1C1510] text-[#FAF6EE] rounded-3xl border border-[#48372A] p-6 sm:p-8 shadow-deep-xl overflow-hidden z-10",
+                    className: "relative w-full max-w-md bg-[#1C1510] text-[#FAF6EE] rounded-3xl border border-[#48372A] p-6 sm:p-8 shadow-deep-xl overflow-y-auto max-h-[92vh] z-10 scrollbar-none",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute top-0 right-0 w-64 h-64 bg-[#D4A949]/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
@@ -969,7 +969,7 @@ const NexoraLogo = ({ size = 'md', variant = 'light', showTagline = true, classN
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     showTagline && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: `font-semibold uppercase ${taglineSizes[size]} mt-0.5 leading-none ${isDark ? 'text-[#7A5416]' : 'text-[#D8BE8E]'}`,
+                        className: `hidden sm:inline-block font-semibold uppercase ${taglineSizes[size]} mt-0.5 leading-none ${isDark ? 'text-[#7A5416]' : 'text-[#D8BE8E]'}`,
                         children: "Scholars Pathway · 100% Need Met"
                     }, void 0, false, {
                         fileName: "[project]/src/components/NexoraLogo.tsx",

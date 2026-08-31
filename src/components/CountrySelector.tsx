@@ -83,14 +83,14 @@ export const CountrySelector: React.FC<CountrySelectorProps> = ({
         whileTap={{ scale: 0.96 }}
         onClick={() => setIsOpen(!isOpen)}
         id="country-selector-trigger-btn"
-        className="inline-flex items-center gap-2 liquid-glass-light text-[#221A14] px-3.5 py-2 rounded-2xl shadow-deep-sm transition-all cursor-pointer text-xs font-bold"
+        className="inline-flex items-center gap-1.5 sm:gap-2 liquid-glass-light text-[#221A14] px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-2xl shadow-deep-sm transition-all cursor-pointer text-xs font-bold shrink-0"
       >
-        <span className="text-base leading-none">{selectedCountry.flagEmoji}</span>
-        <span className="truncate max-w-[130px]">{selectedCountry.countryName}</span>
+        <span className="text-sm sm:text-base leading-none">{selectedCountry.flagEmoji}</span>
+        <span className="hidden md:inline truncate max-w-[120px]">{selectedCountry.countryName}</span>
         <span className="text-[10px] text-[#7A6959] font-mono font-medium px-1.5 py-0.5 rounded-md bg-white/70 border border-white/80">
           {selectedCountry.currencyCode}
         </span>
-        <ChevronDown className={`w-3.5 h-3.5 text-[#7A6959] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#7A6959] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </motion.button>
 
       {/* Dropdown Menu in iOS Liquid Glass */}
@@ -106,7 +106,7 @@ export const CountrySelector: React.FC<CountrySelectorProps> = ({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 6, scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-              className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-[340px] sm:w-[440px] md:w-[480px] liquid-glass-light rounded-3xl shadow-2xl z-50 p-5 text-[#221A14] overflow-hidden"
+              className="fixed sm:absolute left-3 right-3 sm:left-auto sm:right-0 mt-2 sm:w-[440px] md:w-[480px] liquid-glass-light rounded-3xl shadow-2xl z-50 p-4 sm:p-5 text-[#221A14] overflow-hidden max-h-[85vh] flex flex-col"
             >
               {/* Header */}
               <div className="flex items-center justify-between pb-3 border-b border-[#E3D6C4] mb-3">

@@ -130,7 +130,7 @@ export const NexoraLogo: React.FC<NexoraLogoProps> = ({
 
         {showTagline && (
           <span
-            className={`font-semibold uppercase ${taglineSizes[size]} mt-0.5 leading-none ${
+            className={`hidden sm:inline-block font-semibold uppercase ${taglineSizes[size]} mt-0.5 leading-none ${
               isDark ? 'text-[#7A5416]' : 'text-[#D8BE8E]'
             }`}
           >

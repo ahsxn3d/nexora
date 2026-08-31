@@ -3580,10 +3580,10 @@ const CountrySelector = ({ selectedCountry, onSelectCountry, onOpenAIChat })=>{
                 },
                 onClick: ()=>setIsOpen(!isOpen),
                 id: "country-selector-trigger-btn",
-                className: "inline-flex items-center gap-2 liquid-glass-light text-[#221A14] px-3.5 py-2 rounded-2xl shadow-deep-sm transition-all cursor-pointer text-xs font-bold",
+                className: "inline-flex items-center gap-1.5 sm:gap-2 liquid-glass-light text-[#221A14] px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-2xl shadow-deep-sm transition-all cursor-pointer text-xs font-bold shrink-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-base leading-none",
+                        className: "text-sm sm:text-base leading-none",
                         children: selectedCountry.flagEmoji
                     }, void 0, false, {
                         fileName: "[project]/src/components/CountrySelector.tsx",
@@ -3591,7 +3591,7 @@ const CountrySelector = ({ selectedCountry, onSelectCountry, onOpenAIChat })=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "truncate max-w-[130px]",
+                        className: "hidden md:inline truncate max-w-[120px]",
                         children: selectedCountry.countryName
                     }, void 0, false, {
                         fileName: "[project]/src/components/CountrySelector.tsx",
@@ -3607,7 +3607,7 @@ const CountrySelector = ({ selectedCountry, onSelectCountry, onOpenAIChat })=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                        className: `w-3.5 h-3.5 text-[#7A6959] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`
+                        className: `w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#7A6959] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`
                     }, void 0, false, {
                         fileName: "[project]/src/components/CountrySelector.tsx",
                         lineNumber: 93,
@@ -3651,7 +3651,7 @@ const CountrySelector = ({ selectedCountry, onSelectCountry, onOpenAIChat })=>{
                                 stiffness: 400,
                                 damping: 25
                             },
-                            className: "absolute left-0 sm:right-0 sm:left-auto mt-2 w-[340px] sm:w-[440px] md:w-[480px] liquid-glass-light rounded-3xl shadow-2xl z-50 p-5 text-[#221A14] overflow-hidden",
+                            className: "fixed sm:absolute left-3 right-3 sm:left-auto sm:right-0 mt-2 sm:w-[440px] md:w-[480px] liquid-glass-light rounded-3xl shadow-2xl z-50 p-4 sm:p-5 text-[#221A14] overflow-hidden max-h-[85vh] flex flex-col",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center justify-between pb-3 border-b border-[#E3D6C4] mb-3",
@@ -4829,7 +4829,9 @@ __turbopack_context__.s([
     ()=>Header
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/motion/dist/es/react.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript) <export default as Building2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$coins$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Coins$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/coins.js [app-ssr] (ecmascript) <export default as Coins>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/compass.js [app-ssr] (ecmascript) <export default as Compass>");
@@ -4839,6 +4841,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-ssr] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-ssr] (ecmascript) <export default as Award>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bot.js [app-ssr] (ecmascript) <export default as Bot>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-ssr] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CountrySelector$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/CountrySelector.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AuthButton.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$NexoraLogo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/NexoraLogo.tsx [app-ssr] (ecmascript)");
@@ -4849,35 +4854,51 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$NexoraL
 ;
 ;
 ;
+;
 const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, onOpenAIChat, completedTasksCount = 0, totalTasks = 25 })=>{
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const completionPercentage = Math.round(completedTasksCount / totalTasks * 100);
     const navItems = [
         {
             id: 'portals-section',
             label: '1. Portals & Berea Direct',
+            shortLabel: 'Portals',
+            description: 'Common App, Berea Direct, SAT, CSS Profile, SEVIS & Visa',
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"]
         },
         {
             id: 'colleges-section',
             label: '2. 100% Need-Met Colleges',
+            shortLabel: 'Colleges',
+            description: 'Berea, Amherst, Dartmouth, Princeton, Harvard, MIT',
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"]
         },
         {
             id: 'timeline-section',
             label: '3. 5-Step Scholar Plan',
+            shortLabel: '5-Step Plan',
+            description: 'Runway, 1450+ SAT, $0 EFC CSS, F-1 Visa & Arrival',
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__["Compass"]
         },
         {
             id: 'runway-tools-section',
             label: '4. Runway Budget & Tests',
+            shortLabel: 'Runway',
+            description: 'Upfront test/visa expense tracker & $750/mo campus job',
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$coins$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Coins$3e$__["Coins"]
         },
         {
             id: 'common-app-helper-section',
             label: '5. Arrival & Visa',
+            shortLabel: 'Arrival',
+            description: 'Common App activity character validator & arrival protocol',
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"]
         }
     ];
+    const handleMobileNavClick = (sectionId)=>{
+        setIsMobileMenuOpen(false);
+        onNavigate(sectionId);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "mb-10 sm:mb-14",
         children: [
@@ -4893,18 +4914,25 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                 transition: {
                     duration: 0.4
                 },
-                className: "liquid-glass-header rounded-3xl p-3.5 sm:p-4 mb-6 flex flex-wrap items-center justify-between gap-3 sm:gap-4 shadow-banner-dark",
+                className: "liquid-glass-header rounded-3xl p-3 sm:p-4 mb-6 flex items-center justify-between gap-2.5 sm:gap-4 shadow-banner-dark",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$NexoraLogo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NexoraLogo"], {
-                        size: "md",
-                        variant: "light"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$NexoraLogo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NexoraLogo"], {
+                            size: "md",
+                            variant: "light"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Header.tsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 60,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center flex-wrap gap-2.5",
+                        className: "flex items-center gap-2 sm:gap-2.5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CountrySelector$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CountrySelector"], {
                                 selectedCountry: selectedCountry,
@@ -4912,7 +4940,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                 onOpenAIChat: onOpenAIChat
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 64,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
@@ -4930,29 +4958,20 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                 },
                                 onClick: onOpenAIChat,
                                 id: "top-masthead-ai-chat-btn",
-                                className: "flex items-center gap-2 bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] hover:from-[#E8C57D] hover:to-[#C6953C] text-[#1C1510] font-extrabold px-3.5 py-2 rounded-2xl border border-[#F5DC9A] shadow-deep-sm cursor-pointer text-xs whitespace-nowrap transition-all",
+                                className: "hidden sm:flex items-center gap-2 bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] hover:from-[#E8C57D] hover:to-[#C6953C] text-[#1C1510] font-extrabold px-3.5 py-2 rounded-2xl border border-[#F5DC9A] shadow-deep-sm cursor-pointer text-xs whitespace-nowrap transition-all",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
                                         className: "w-4 h-4 text-[#1C1510]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 122,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "hidden sm:inline",
                                         children: "AI Advisor"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 80,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "sm:hidden",
-                                        children: "AI"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 123,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4960,30 +4979,351 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                         children: selectedCountry.countryName === 'Pakistan' ? 'PK' : selectedCountry.flagEmoji
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 71,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AuthButton"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 88,
+                                lineNumber: 130,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
+                                whileHover: {
+                                    scale: 1.05
+                                },
+                                whileTap: {
+                                    scale: 0.95
+                                },
+                                onClick: ()=>setIsMobileMenuOpen(!isMobileMenuOpen),
+                                id: "mobile-hamburger-toggle",
+                                "aria-label": "Toggle navigation menu",
+                                className: "lg:hidden flex items-center justify-center p-2.5 rounded-2xl bg-[#2D2117] hover:bg-[#3D2E22] text-[#FAF6EE] border border-[#D4A949]/50 shadow-deep-sm cursor-pointer transition-colors",
+                                children: isMobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                    className: "w-5 h-5 text-[#E6C678]"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 142,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+                                    className: "w-5 h-5 text-[#E6C678]"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 144,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Header.tsx",
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 63,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Header.tsx",
-                lineNumber: 53,
+                lineNumber: 93,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                children: isMobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
+                            initial: {
+                                opacity: 0
+                            },
+                            animate: {
+                                opacity: 1
+                            },
+                            exit: {
+                                opacity: 0
+                            },
+                            onClick: ()=>setIsMobileMenuOpen(false),
+                            className: "fixed inset-0 bg-black/65 backdrop-blur-sm z-50 lg:hidden"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Header.tsx",
+                            lineNumber: 155,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                y: -20,
+                                scale: 0.96
+                            },
+                            animate: {
+                                opacity: 1,
+                                y: 0,
+                                scale: 1
+                            },
+                            exit: {
+                                opacity: 0,
+                                y: -15,
+                                scale: 0.96
+                            },
+                            transition: {
+                                type: 'spring',
+                                stiffness: 380,
+                                damping: 26
+                            },
+                            className: "fixed top-20 left-3 right-3 max-w-md mx-auto bg-[#1C1510] text-[#FAF6EE] rounded-3xl border border-[#D4A949]/40 shadow-2xl p-5 z-50 lg:hidden max-h-[85vh] overflow-y-auto",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center justify-between pb-3.5 border-b border-[#3A2E24] mb-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$NexoraLogo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NexoraLogo"], {
+                                                    size: "sm",
+                                                    variant: "light",
+                                                    showTagline: false
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Header.tsx",
+                                                    lineNumber: 174,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-xs font-bold text-[#E6C678] uppercase tracking-wider",
+                                                    children: "Navigation Menu"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Header.tsx",
+                                                    lineNumber: 175,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 173,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>setIsMobileMenuOpen(false),
+                                            className: "p-1.5 rounded-full hover:bg-[#2F231B] text-[#C4B29B] hover:text-[#FAF6EE]",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                                className: "w-5 h-5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Header.tsx",
+                                                lineNumber: 181,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 177,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 172,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-2 mb-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-[11px] font-bold text-[#A89886] uppercase tracking-wider px-1",
+                                            children: "Roadmap Sections"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 187,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        navItems.map((tab)=>{
+                                            const Icon = tab.icon;
+                                            const isActive = activeSection === tab.id;
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
+                                                whileHover: {
+                                                    scale: 1.02
+                                                },
+                                                whileTap: {
+                                                    scale: 0.98
+                                                },
+                                                onClick: ()=>handleMobileNavClick(tab.id),
+                                                id: `mobile-nav-${tab.id}`,
+                                                className: `w-full text-left p-3.5 rounded-2xl transition-all cursor-pointer flex items-center justify-between gap-3 border ${isActive ? 'bg-[#F5E4A8] text-[#1C1510] font-bold border-[#F5E4A8] shadow-deep-sm' : 'bg-[#291F18] text-[#FAF6EE] border-[#433427] hover:bg-[#34271E]'}`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-3 min-w-0",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: `p-2 rounded-xl shrink-0 ${isActive ? 'bg-[#1C1510] text-[#F5E4A8]' : 'bg-[#3B2C21] text-[#E6C678]'}`,
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                                    className: "w-4 h-4"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/Header.tsx",
+                                                                    lineNumber: 208,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Header.tsx",
+                                                                lineNumber: 205,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "min-w-0",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "text-xs font-bold leading-tight truncate",
+                                                                        children: tab.label
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/Header.tsx",
+                                                                        lineNumber: 211,
+                                                                        columnNumber: 27
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: `text-[11px] truncate mt-0.5 ${isActive ? 'text-[#3E2E20]' : 'text-[#A89886]'}`,
+                                                                        children: tab.description
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/Header.tsx",
+                                                                        lineNumber: 212,
+                                                                        columnNumber: 27
+                                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/Header.tsx",
+                                                                lineNumber: 210,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/Header.tsx",
+                                                        lineNumber: 204,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                        className: `w-4 h-4 shrink-0 ${isActive ? 'text-[#1C1510]' : 'text-[#7A6959]'}`
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Header.tsx",
+                                                        lineNumber: 219,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, tab.id, true, {
+                                                fileName: "[project]/src/components/Header.tsx",
+                                                lineNumber: 192,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0));
+                                        })
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 186,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
+                                    whileHover: {
+                                        scale: 1.02
+                                    },
+                                    whileTap: {
+                                        scale: 0.98
+                                    },
+                                    onClick: ()=>{
+                                        setIsMobileMenuOpen(false);
+                                        onOpenAIChat();
+                                    },
+                                    id: "mobile-menu-ai-chat-btn",
+                                    className: "w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] text-[#1C1510] font-extrabold p-3.5 rounded-2xl shadow-deep-md border border-[#F5DC9A] cursor-pointer text-xs mb-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
+                                            className: "w-4 h-4 text-[#1C1510]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 236,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: "Open AI Admissions Advisor"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 237,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-xs bg-[#1C1510]/15 px-2 py-0.5 rounded-md font-mono",
+                                            children: selectedCountry.countryName === 'Pakistan' ? 'PK' : selectedCountry.flagEmoji
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 238,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 226,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-[#241A14] rounded-2xl p-3 border border-[#3E3024] flex items-center justify-between text-xs text-[#C4B29B]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
+                                                    className: "w-4 h-4 text-[#E6C678]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Header.tsx",
+                                                    lineNumber: 246,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: "Tasks Completed"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Header.tsx",
+                                                    lineNumber: 247,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 245,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "font-mono font-bold text-[#F5E4A8]",
+                                            children: [
+                                                completedTasksCount,
+                                                " / ",
+                                                totalTasks,
+                                                " (",
+                                                completionPercentage,
+                                                "%)"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Header.tsx",
+                                            lineNumber: 249,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Header.tsx",
+                                    lineNumber: 244,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Header.tsx",
+                            lineNumber: 164,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Header.tsx",
+                    lineNumber: 153,
+                    columnNumber: 11
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/src/components/Header.tsx",
+                lineNumber: 151,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5004,30 +5344,30 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                     mass: 0.9,
                     delay: 0.05
                 },
-                className: "liquid-glass-dark rounded-3xl text-[#F7F3EC] p-6 sm:p-9 relative overflow-hidden shadow-banner-dark",
+                className: "liquid-glass-dark rounded-3xl text-[#F7F3EC] p-5 sm:p-8 md:p-9 relative overflow-hidden shadow-banner-dark",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-0 right-0 w-96 h-96 bg-[#C59B3F]/15 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 100,
+                        lineNumber: 264,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-0 left-1/4 w-72 h-72 bg-[#44624A]/20 rounded-full blur-2xl pointer-events-none"
+                        className: "absolute bottom-0 left-1/4 w-72 h-72 bg-[#2E1F14]/20 rounded-full blur-2xl pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 101,
+                        lineNumber: 265,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8",
+                        className: "relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "max-w-3xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap items-center gap-2.5 mb-3.5",
+                                        className: "flex flex-wrap items-center gap-2 mb-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].span, {
                                                 whileHover: {
@@ -5038,30 +5378,30 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                     stiffness: 400,
                                                     damping: 18
                                                 },
-                                                className: "inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#F2DEB0] bg-[#2E231B]/80 backdrop-blur-md px-3.5 py-1 rounded-full border border-[#524032] whitespace-nowrap shadow-deep-sm",
+                                                className: "inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#F2DEB0] bg-[#2E231B]/80 backdrop-blur-md px-3 py-1 rounded-full border border-[#524032] whitespace-nowrap shadow-deep-sm",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
                                                         className: "w-3.5 h-3.5 text-[#E6C678]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.tsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 276,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     "International Applicant Blueprint"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 107,
+                                                lineNumber: 271,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#D4C4B0] bg-[#2E231B]/70 backdrop-blur-md px-3.5 py-1 rounded-full border border-[#48372A]",
+                                                className: "inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-semibold text-[#D4C4B0] bg-[#2E231B]/70 backdrop-blur-md px-3 py-1 rounded-full border border-[#48372A]",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: selectedCountry.flagEmoji
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.tsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 281,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5071,31 +5411,31 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Header.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 282,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 280,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 270,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-3xl sm:text-4xl lg:text-[40px] font-bold tracking-tight text-[#FAF7F2] font-serif-heading leading-[1.18] mb-3.5",
+                                        className: "text-2xl sm:text-3xl lg:text-[40px] font-bold tracking-tight text-[#FAF7F2] font-serif-heading leading-[1.2] mb-3",
                                         children: "F-1 Visa & 100% Full-Need US College Roadmap"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 287,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm sm:text-[15px] text-[#D8CDC0] leading-relaxed max-w-2xl font-sans-ui",
+                                        className: "text-xs sm:text-sm md:text-[15px] text-[#D8CDC0] leading-relaxed max-w-2xl font-sans-ui",
                                         children: [
                                             "Tailored for ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5107,7 +5447,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 292,
                                                 columnNumber: 28
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " applicants. A unified single-dashboard guide uniting the ",
@@ -5116,7 +5456,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 children: "Common App"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 292,
                                                 columnNumber: 197
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " ecosystem, ",
@@ -5125,7 +5465,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 children: "Berea College direct portal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 292,
                                                 columnNumber: 273
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             ", official SAT & DET testing, CSS Profile $0 EFC financial aid filings, and consular interviews at ",
@@ -5134,20 +5474,20 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 children: selectedCountry.embassyLocations[0] || 'the US Embassy'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 292,
                                                 columnNumber: 453
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 291,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 104,
+                                lineNumber: 268,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5159,7 +5499,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                     stiffness: 350,
                                     damping: 20
                                 },
-                                className: "lg:w-80 bg-[#291F18]/80 backdrop-blur-xl rounded-2xl border border-[#D4A949]/30 p-5 shrink-0 flex flex-col justify-between shadow-deep-md",
+                                className: "w-full lg:w-80 bg-[#291F18]/80 backdrop-blur-xl rounded-2xl border border-[#D4A949]/30 p-4 sm:p-5 shrink-0 flex flex-col justify-between shadow-deep-md",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center justify-between mb-3",
@@ -5169,7 +5509,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 children: "Roadmap Progress"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 303,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5180,13 +5520,13 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 306,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 138,
+                                        lineNumber: 302,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5205,12 +5545,12 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                             className: "h-full bg-gradient-to-r from-[#8C6328] via-[#D4A949] to-[#2E6B37] rounded-full shadow-[0_0_10px_rgba(212,169,73,0.5)]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header.tsx",
-                                            lineNumber: 149,
+                                            lineNumber: 313,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 312,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5226,7 +5566,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 322,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5234,29 +5574,29 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                                 children: completionPercentage === 100 ? '🎉 Departure Ready!' : 'In Progress'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 323,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 157,
+                                        lineNumber: 321,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 133,
+                                lineNumber: 297,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 103,
+                        lineNumber: 267,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-2 md:grid-cols-4 gap-3.5 mt-8 pt-7 border-t border-[#3A2E24]/80",
+                        className: "grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-3.5 mt-6 sm:mt-8 pt-5 sm:pt-7 border-t border-[#3A2E24]/80",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
                                 whileHover: {
@@ -5268,27 +5608,27 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                     stiffness: 400,
                                     damping: 18
                                 },
-                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3.5 border border-[#48372A] shadow-deep-sm",
+                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3 sm:p-3.5 border border-[#48372A] shadow-deep-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5 text-[#E6C678] text-xs font-semibold mb-1 whitespace-nowrap",
+                                        className: "flex items-center gap-1.5 text-[#E6C678] text-[11px] sm:text-xs font-semibold mb-1 whitespace-nowrap",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$coins$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Coins$3e$__["Coins"], {
-                                                className: "w-4 h-4 text-[#E6C678]"
+                                                className: "w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#E6C678]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 174,
+                                                lineNumber: 338,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Upfront Fund"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 337,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-base sm:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1 truncate",
+                                        className: "text-sm sm:text-base md:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1 truncate",
                                         children: [
                                             selectedCountry.currencySymbol,
                                             " ",
@@ -5298,11 +5638,11 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 341,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[11px] text-[#B8AA98] mt-0.5 leading-snug truncate",
+                                        className: "text-[10px] sm:text-[11px] text-[#B8AA98] mt-0.5 leading-snug truncate",
                                         children: [
                                             "~$",
                                             2300..toLocaleString(),
@@ -5310,13 +5650,13 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 180,
+                                        lineNumber: 344,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 168,
+                                lineNumber: 332,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5329,45 +5669,45 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                     stiffness: 400,
                                     damping: 18
                                 },
-                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3.5 border border-[#48372A] shadow-deep-sm",
+                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3 sm:p-3.5 border border-[#48372A] shadow-deep-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5 text-[#7BD492] text-xs font-semibold mb-1 whitespace-nowrap",
+                                        className: "flex items-center gap-1.5 text-[#7BD492] text-[11px] sm:text-xs font-semibold mb-1 whitespace-nowrap",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
-                                                className: "w-4 h-4 text-[#7BD492]"
+                                                className: "w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#7BD492]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 355,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Calculated EFC"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 354,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-base sm:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1",
+                                        className: "text-sm sm:text-base md:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1",
                                         children: "$0 / year"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 358,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[11px] text-[#B8AA98] mt-0.5 leading-snug",
+                                        className: "text-[10px] sm:text-[11px] text-[#B8AA98] mt-0.5 leading-snug",
                                         children: "100% need met policy"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 197,
+                                        lineNumber: 361,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 185,
+                                lineNumber: 349,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5380,45 +5720,45 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                     stiffness: 400,
                                     damping: 18
                                 },
-                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3.5 border border-[#48372A] shadow-deep-sm",
+                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3 sm:p-3.5 border border-[#48372A] shadow-deep-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5 text-[#86BAE8] text-xs font-semibold mb-1 whitespace-nowrap",
+                                        className: "flex items-center gap-1.5 text-[#86BAE8] text-[11px] sm:text-xs font-semibold mb-1 whitespace-nowrap",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"], {
-                                                className: "w-4 h-4 text-[#86BAE8]"
+                                                className: "w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#86BAE8]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 372,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Testing Target"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 207,
+                                        lineNumber: 371,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-base sm:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1",
+                                        className: "text-sm sm:text-base md:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1 truncate",
                                         children: "1450+ SAT / 125+ DET"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 375,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[11px] text-[#B8AA98] mt-0.5 leading-snug truncate",
+                                        className: "text-[10px] sm:text-[11px] text-[#B8AA98] mt-0.5 leading-snug truncate",
                                         children: selectedCountry.advisingCenter
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 214,
+                                        lineNumber: 378,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 202,
+                                lineNumber: 366,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5431,61 +5771,61 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                     stiffness: 400,
                                     damping: 18
                                 },
-                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3.5 border border-[#48372A] shadow-deep-sm",
+                                className: "bg-[#261D16]/80 backdrop-blur-md rounded-2xl p-3 sm:p-3.5 border border-[#48372A] shadow-deep-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5 text-[#F2C063] text-xs font-semibold mb-1 whitespace-nowrap",
+                                        className: "flex items-center gap-1.5 text-[#F2C063] text-[11px] sm:text-xs font-semibold mb-1 whitespace-nowrap",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"], {
-                                                className: "w-4 h-4 text-[#F2C063]"
+                                                className: "w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F2C063]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Header.tsx",
-                                                lineNumber: 225,
+                                                lineNumber: 389,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Campus Cashflow"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 388,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-base sm:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1",
+                                        className: "text-sm sm:text-base md:text-lg font-bold text-[#FAF6EE] font-mono leading-none my-1",
                                         children: "$750–$900/mo"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 392,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[11px] text-[#B8AA98] mt-0.5 leading-snug",
+                                        className: "text-[10px] sm:text-[11px] text-[#B8AA98] mt-0.5 leading-snug",
                                         children: "15–20 hr/wk student work"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 231,
+                                        lineNumber: 395,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 219,
+                                lineNumber: 383,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 167,
+                        lineNumber: 331,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Header.tsx",
-                lineNumber: 93,
+                lineNumber: 257,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-6 w-full space-y-2.5",
+                className: "hidden lg:block mt-6 w-full space-y-2.5",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-wrap items-center gap-1.5 liquid-glass-header p-2 rounded-2xl shadow-deep-md w-full",
@@ -5512,7 +5852,7 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                         className: "w-3.5 h-3.5 shrink-0"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 259,
+                                        lineNumber: 423,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5520,19 +5860,19 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                         children: tab.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 424,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, tab.id, true, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 246,
+                                lineNumber: 410,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0));
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 241,
+                        lineNumber: 405,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
@@ -5556,14 +5896,14 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                 className: "w-4 h-4 text-[#1C1510]"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 275,
+                                lineNumber: 439,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "AI Admissions Advisor"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 276,
+                                lineNumber: 440,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5571,25 +5911,25 @@ const Header = ({ activeSection, onNavigate, selectedCountry, onSelectCountry, o
                                 children: selectedCountry.countryName === 'Pakistan' ? 'PK' : selectedCountry.flagEmoji
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Header.tsx",
-                                lineNumber: 277,
+                                lineNumber: 441,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Header.tsx",
-                        lineNumber: 267,
+                        lineNumber: 431,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Header.tsx",
-                lineNumber: 239,
+                lineNumber: 403,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Header.tsx",
-        lineNumber: 51,
+        lineNumber: 91,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -7744,6 +8084,8 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"]
         }
     ];
+    const activeNavItem = navLinks.find((item)=>item.id === activeSection) || navLinks[0];
+    const ActiveIcon = activeNavItem.icon;
     const handleScrollToTop = ()=>{
         scrollTo(0, {
             duration: 1.4
@@ -7763,12 +8105,12 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                    lineNumber: 81,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                lineNumber: 80,
+                lineNumber: 83,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -7794,9 +8136,9 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                         damping: 24,
                         mass: 0.8
                     },
-                    className: "fixed top-4 left-1/2 -translate-x-1/2 z-40 max-w-5xl w-[96%]",
+                    className: "fixed top-3 sm:top-4 left-1/2 -translate-x-1/2 z-40 max-w-5xl w-[94%] sm:w-[92%]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "liquid-glass-dark text-[#FAF6EE] px-4 py-2.5 rounded-3xl flex items-center justify-between gap-3 shadow-deep-xl",
+                        className: "liquid-glass-dark text-[#FAF6EE] px-3 sm:px-4 py-2 sm:py-2.5 rounded-3xl flex items-center justify-between gap-2 sm:gap-3 shadow-deep-xl border border-[#D4A949]/35",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 onClick: handleScrollToTop,
@@ -7808,16 +8150,16 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                     showTagline: false
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 118,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 109,
+                                lineNumber: 113,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1",
+                                className: "hidden md:flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1",
                                 children: navLinks.map((item)=>{
                                     const Icon = item.icon;
                                     const isActive = activeSection === item.id;
@@ -7836,32 +8178,63 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                         },
                                         onClick: ()=>onNavigate(item.id),
                                         id: `floating-nav-${item.id}`,
-                                        className: `flex-1 relative text-xs font-semibold px-3.5 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap flex items-center justify-center gap-1.5 ${isActive ? 'bg-[#F5E4A8] text-[#1C1510] font-bold shadow-deep-sm' : 'text-[#D0C2B0] hover:text-[#FAF6EE] hover:bg-white/10'}`,
+                                        className: `flex-1 relative text-xs font-semibold px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap flex items-center justify-center gap-1.5 ${isActive ? 'bg-[#F5E4A8] text-[#1C1510] font-bold shadow-deep-sm' : 'text-[#D0C2B0] hover:text-[#FAF6EE] hover:bg-white/10'}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                                 className: "w-3.5 h-3.5 shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 140,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 141,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, item.id, true, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 127,
                                         columnNumber: 21
                                     }, ("TURBOPACK compile-time value", void 0));
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 118,
+                                lineNumber: 122,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "md:hidden flex items-center gap-1.5 min-w-0 flex-1",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-1.5 bg-[#F5E4A8] text-[#1C1510] font-bold px-2.5 py-1 rounded-xl text-xs truncate shadow-deep-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ActiveIcon, {
+                                            className: "w-3.5 h-3.5 shrink-0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ScrollExperience.tsx",
+                                            lineNumber: 150,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "truncate",
+                                            children: activeNavItem.label
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ScrollExperience.tsx",
+                                            lineNumber: 151,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/ScrollExperience.tsx",
+                                    lineNumber: 149,
+                                    columnNumber: 17
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ScrollExperience.tsx",
+                                lineNumber: 148,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)),
                             onOpenAIChat && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
@@ -7875,20 +8248,21 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                 onClick: onOpenAIChat,
                                 id: "floating-open-ai-chat",
                                 title: "Open AI Admissions Counselor",
-                                className: "flex items-center gap-1.5 text-xs font-bold px-3.5 py-2 rounded-xl bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] hover:from-[#E8C57D] hover:to-[#C6953C] text-[#1C1510] shadow-deep-sm cursor-pointer whitespace-nowrap shrink-0 border border-[#F5DC9A]",
+                                className: "flex items-center gap-1.5 text-xs font-bold px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] hover:from-[#E8C57D] hover:to-[#C6953C] text-[#1C1510] shadow-deep-sm cursor-pointer whitespace-nowrap shrink-0 border border-[#F5DC9A]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
                                         className: "w-3.5 h-3.5 text-[#1C1510]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 153,
+                                        lineNumber: 165,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "hidden sm:inline",
                                         children: "AI Advisor"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 166,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7896,27 +8270,27 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                         children: selectedCountry?.countryName === 'Pakistan' ? 'PK' : selectedCountry?.flagEmoji
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 167,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 145,
+                                lineNumber: 157,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-2 pl-3 border-l border-[#48372A] shrink-0",
+                                className: "flex items-center gap-1.5 sm:gap-2 pl-2 sm:pl-3 border-l border-[#48372A] shrink-0",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[10px] font-mono text-[#D4C3A3] font-bold",
+                                        className: "text-[10px] font-mono text-[#D4C3A3] font-bold hidden sm:inline",
                                         children: [
                                             scrollProgressPercent,
                                             "%"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 175,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
@@ -7935,43 +8309,43 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                         onClick: handleScrollToTop,
                                         id: "floating-scroll-top-btn",
                                         title: "Smooth scroll to top",
-                                        className: "p-2 rounded-xl bg-[#2D221A]/90 text-[#FAF6EE] hover:bg-[#3D2F24] transition-colors cursor-pointer border border-[#48392C]",
+                                        className: "p-1.5 sm:p-2 rounded-xl bg-[#2D221A]/90 text-[#FAF6EE] hover:bg-[#3D2F24] transition-colors cursor-pointer border border-[#48392C]",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
                                             className: "w-3.5 h-3.5 text-[#E6C678]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ScrollExperience.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 187,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 178,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 162,
+                                lineNumber: 174,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                        lineNumber: 107,
+                        lineNumber: 110,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                    lineNumber: 95,
+                    lineNumber: 98,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                lineNumber: 93,
+                lineNumber: 96,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed bottom-5 right-5 z-40 flex flex-col gap-2.5 items-end",
+                className: "fixed bottom-4 sm:bottom-5 right-4 sm:right-5 z-40 flex flex-col gap-2.5 items-end",
                 children: [
                     onOpenAIChat && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].button, {
                         initial: {
@@ -7997,7 +8371,7 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                         onClick: onOpenAIChat,
                         id: "fab-ai-counselor",
                         title: "Ask AI Admissions Counselor",
-                        className: "group flex items-center gap-2.5 liquid-glass-dark text-[#FAF6EE] hover:border-[#D4A949] px-4 py-3 rounded-2xl shadow-2xl transition-all cursor-pointer ring-2 ring-[#8C6328]/30",
+                        className: "group flex items-center gap-2 sm:gap-2.5 liquid-glass-dark text-[#FAF6EE] hover:border-[#D4A949] p-3 sm:px-4 sm:py-3 rounded-2xl shadow-2xl transition-all cursor-pointer ring-2 ring-[#8C6328]/30",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-6 h-6 rounded-lg bg-[#8C6328]/30 flex items-center justify-center text-[#E6C678] border border-[#8C6328]/60",
@@ -8005,12 +8379,12 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                     className: "w-3.5 h-3.5"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 211,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 198,
+                                lineNumber: 210,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8023,7 +8397,7 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                                 children: "AI Admissions Advisor"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                                lineNumber: 203,
+                                                lineNumber: 215,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             selectedCountry && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8031,13 +8405,13 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                                 children: selectedCountry.flagEmoji
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                                lineNumber: 204,
+                                                lineNumber: 216,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 214,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8045,26 +8419,26 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                         children: "Personalize your plan"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                                        lineNumber: 206,
+                                        lineNumber: 218,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 201,
+                                lineNumber: 213,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
                                 className: "w-3.5 h-3.5 text-[#E6C678] animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                                lineNumber: 208,
+                                lineNumber: 220,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                        lineNumber: 187,
+                        lineNumber: 199,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -8099,13 +8473,13 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                             onClick: handleScrollToTop,
                             id: "fab-scroll-top",
                             title: "Lenis smooth scroll to top",
-                            className: "group flex items-center gap-2 liquid-glass-dark text-[#FAF6EE] px-3.5 py-2.5 rounded-2xl shadow-deep-xl transition-all cursor-pointer",
+                            className: "group flex items-center gap-1.5 sm:gap-2 liquid-glass-dark text-[#FAF6EE] p-2.5 sm:px-3.5 sm:py-2.5 rounded-2xl shadow-deep-xl transition-all cursor-pointer",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
                                     className: "w-4 h-4 text-[#E6C678] group-hover:-translate-y-0.5 transition-transform"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 239,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8116,30 +8490,30 @@ const ScrollExperience = ({ activeSection, onNavigate, selectedCountry, onOpenAI
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ScrollExperience.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 240,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ScrollExperience.tsx",
-                            lineNumber: 215,
+                            lineNumber: 227,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ScrollExperience.tsx",
-                        lineNumber: 213,
+                        lineNumber: 225,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ScrollExperience.tsx",
-                lineNumber: 184,
+                lineNumber: 196,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ScrollExperience.tsx",
-        lineNumber: 78,
+        lineNumber: 81,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

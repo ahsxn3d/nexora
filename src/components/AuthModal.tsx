@@ -41,7 +41,7 @@ export const AuthModal: React.FC = () => {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
           transition={{ type: 'spring', stiffness: 380, damping: 25 }}
-          className="relative w-full max-w-md bg-[#1C1510] text-[#FAF6EE] rounded-3xl border border-[#48372A] p-6 sm:p-8 shadow-deep-xl overflow-hidden z-10"
+          className="relative w-full max-w-md bg-[#1C1510] text-[#FAF6EE] rounded-3xl border border-[#48372A] p-6 sm:p-8 shadow-deep-xl overflow-y-auto max-h-[92vh] z-10 scrollbar-none"
         >
           {/* Subtle Ambient Background Glows */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4A949]/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />

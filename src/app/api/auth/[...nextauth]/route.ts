@@ -4,6 +4,13 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { prisma } from '../../../../lib/prisma';
 
+// Ensure NEXTAUTH_URL has a safe fallback during Vercel build
+if (!process.env.NEXTAUTH_URL) {
+  process.env.NEXTAUTH_URL = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : 'https://nexora.anorix.dev';
+}
+
 const hasDatabase = !!process.env.DATABASE_URL;
 
 const authOptions: NextAuthOptions = {

@@ -400,7 +400,7 @@ export const Header: React.FC<HeaderProps> = ({
       </motion.div>
 
       {/* Desktop Navigation Tabs (Visible on large screens) */}
-      <div className="hidden lg:block mt-6 w-full space-y-2.5">
+      <div className="hidden lg:block mt-6 w-full">
         {/* Tab Pills Row in Liquid Glass */}
         <div className="flex flex-wrap items-center gap-1.5 liquid-glass-header p-2 rounded-2xl shadow-deep-md w-full">
           {navItems.map((tab) => {
@@ -426,20 +426,6 @@ export const Header: React.FC<HeaderProps> = ({
             );
           })}
         </div>
-
-        {/* AI Counselor Action Button in Warm Gold / Skin Tone */}
-        <motion.button
-          whileHover={{ scale: 1.01, y: -1 }}
-          whileTap={{ scale: 0.98 }}
-          transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-          onClick={onOpenAIChat}
-          id="header-open-ai-chat-btn"
-          className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#DFB86C] via-[#CD9E47] to-[#B88732] hover:from-[#E8C57D] hover:to-[#C6953C] text-[#1C1510] px-4 py-3 rounded-2xl shadow-deep-md cursor-pointer text-xs font-bold border border-[#F5DC9A]"
-        >
-          <Bot className="w-4 h-4 text-[#1C1510]" />
-          <span>AI Admissions Advisor</span>
-          <span className="text-xs bg-[#1C1510]/15 px-2 py-0.5 rounded-md font-mono">{selectedCountry.countryName === 'Pakistan' ? 'PK' : selectedCountry.flagEmoji}</span>
-        </motion.button>
       </div>
     </header>
   );
